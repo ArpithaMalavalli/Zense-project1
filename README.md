@@ -12,7 +12,7 @@ WHAT TO DO
 
 1)Delete token.json which comes with cloned directory
 
-##In managingEvents_general.py:
+In managingEvents_general.py:
 
 2)add lms username and password at line 201 and 203
 
