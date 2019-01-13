@@ -41,7 +41,7 @@ class Weekday:
 		self.eventl=event_list
 		self.startl=stime_list
 		self.endl=etime_list
-
+#THIS IS THE TIMETABLE FOR FIRST YEARS PLEASE CHANGE AS REQUIRED
 Sunday=Weekday(['MAD'],['09:00:00'],['12:00:00'])
 Monday=Weekday(['Computer Network','Digital Design','DSA lab'],['09:15:00','11:00:00','13:30:00'],['10:45:00','12:30:00','15:30:00'])
 Tuesday=Weekday(['DSA','Math-2','PE'],['09:15:00','11:00:00','16:00:00'],['10:45:00','12:30:00','17:30:00'])
@@ -60,8 +60,6 @@ def addtt(wday):
 		event = {
 		  
 		  'summary': wday.eventl[i],
-		 # 'location': '800 Howard St., San Francisco, CA 94103',
-		 # 'description': 'A chance to hear more about Google\'s developer products.',
 		  'start': {
 		    'dateTime':str(date.today())+'T'+wday.startl[i]+'+05:30',#'2019-01-14'
 		    'timeZone':'Asia/Kolkata',
@@ -71,9 +69,6 @@ def addtt(wday):
 		    'dateTime':str(date.today())+'T'+wday.endl[i]+'+05:30',#'2019-01-14'
 		    'timeZone': 'Asia/Kolkata',
 		  },
-		#  'recurrence': [
-		#  "RRULE:FREQ=WEEKLY;UNTIL=20191030T065959Z"
-		# ],
 		  'reminders': {
 		    'useDefault': False,
 		    'overrides': [
@@ -100,8 +95,6 @@ def add_reminders(event_name,day,date1):
 		event = {
 		  'kind':'Tasks',
 		  'summary':str(eventsub) + ' on '+str(date1)+' , '+str(day),
-		 # 'location': '800 Howard St., San Francisco, CA 94103',
-		 # 'description': 'A chance to hear more about Google\'s developer products.',
 		  'start': {
 		    'date':str(date.today()),
 		    'timeZone':'Asia/Kolkata',
@@ -133,8 +126,6 @@ def add(event_name,day,date1):
 		event = {
 		  'kind':'Tasks',
 		  'summary': event_name,
-		 # 'location': '800 Howard St., San Francisco, CA 94103',
-		 # 'description': 'A chance to hear more about Google\'s developer products.',
 		  'start': {
 		    'dateTime':str(date1)+'T23:59:59+05:30',
 		    'timeZone':'Asia/Kolkata',
@@ -144,9 +135,6 @@ def add(event_name,day,date1):
 		    'dateTime':str(date1)+'T23:59:59+05:30',
 		    'timeZone': 'Asia/Kolkata',
 		  },
-		  #'recurrence': [
-		  #"RRULE:FREQ=WEEKLY;UNTIL=20191030T065959Z"
-		  #],
 		  "transparency": "transparent",
   		  "visibility": "public",
 
@@ -206,9 +194,9 @@ def get_event():
 	submit   = browser.find_element_by_id("loginbtn")
 
 	username.clear()  
-	username.send_keys("IMT2018504")
+	username.send_keys("IMT2018504") #Enter your username
 	password.clear()
-	password.send_keys("Arpabh-123")
+	password.send_keys("Arpabh-123") #Enter your password
 
 
 
