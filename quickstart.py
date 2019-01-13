@@ -234,6 +234,6 @@ if __name__ == '__main__':
 	addtt(day_to_obj[calendar.day_name[my_date.weekday()]])
 	get_event()
 
-#22 19 * * * /usr/bin/python /home/arpitha/Zense-project1/quickstart.py
+#30 1 * * * /usr/bin/python /home/arpitha/Zense-project1/quickstart.py
 #for cron job
 
