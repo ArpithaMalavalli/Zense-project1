@@ -194,9 +194,9 @@ def get_event():
 	submit   = browser.find_element_by_id("loginbtn")
 
 	username.clear()  
-	username.send_keys("IMT2018504") #Enter your username
+	username.send_keys("") #Enter your username
 	password.clear()
-	password.send_keys("Arpabh-123") #Enter your password
+	password.send_keys("") #Enter your password
 
 
 
